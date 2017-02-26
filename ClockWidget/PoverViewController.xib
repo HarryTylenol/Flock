@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PoverViewController" customModule="ClockWidget" customModuleProvider="target">
+            <connections>
+                <outlet property="customColor" destination="4PD-Ri-k9Q" id="FGF-qi-Vu7"/>
+                <outlet property="customText" destination="xW9-aO-vnP" id="7Mt-BX-l2G"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="607" height="353"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" misplaced="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xW9-aO-vnP">
+                    <rect key="frame" x="20" y="249" width="440" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" drawsBackground="YES" id="e4Y-Ch-JPx">
+                        <font key="font" metaFont="system" size="24"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.1999952217" colorSpace="custom" customColorSpace="sRGB"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suQ-Zt-xdm">
+                    <rect key="frame" x="18" y="304" width="153" height="29"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Additional text" id="2kW-NC-CHM">
+                        <font key="font" metaFont="systemLight" size="24"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kli-mn-hg2">
+                    <rect key="frame" x="18" y="279" width="228" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Set user custom text under the clock" id="IQi-ig-vMF">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="0.23767201830000001" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eff-hH-4OT">
+                    <rect key="frame" x="18" y="212" width="210" height="29"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Additional text color" id="MQs-q5-yrz">
+                        <font key="font" metaFont="systemLight" size="24"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Tl-sh-BdT">
+                    <rect key="frame" x="18" y="187" width="262" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Set user custom text color under the clock" id="klM-ME-W6z">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="0.244648318" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4PD-Ri-k9Q">
+                    <rect key="frame" x="20" y="135" width="149" height="44"/>
+                    <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="left" placeholderString="ffffff" drawsBackground="YES" usesSingleLineMode="YES" id="3bn-Do-bO6">
+                        <font key="font" metaFont="system" size="36"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.1999952217" colorSpace="custom" customColorSpace="sRGB"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="seY-qG-cxj">
+                    <rect key="frame" x="20" y="108" width="105" height="19"/>
+                    <buttonCell key="cell" type="roundRect" title="Apply" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1ap-jQ-1GH">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="cellTitle"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="applyButton:" target="-2" id="8Ye-Py-RYm"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="eff-hH-4OT" firstAttribute="top" secondItem="xW9-aO-vnP" secondAttribute="bottom" constant="20" id="AOo-nE-0iB"/>
+                <constraint firstItem="xW9-aO-vnP" firstAttribute="top" secondItem="kli-mn-hg2" secondAttribute="bottom" constant="20" id="H2x-gc-tO7"/>
+                <constraint firstItem="suQ-Zt-xdm" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="I8A-gz-nkk"/>
+                <constraint firstItem="5Tl-sh-BdT" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="Jhc-4O-GRs"/>
+                <constraint firstItem="kli-mn-hg2" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="Q3R-j6-5EO"/>
+                <constraint firstItem="xW9-aO-vnP" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="RFb-Jf-5Pt"/>
+                <constraint firstItem="seY-qG-cxj" firstAttribute="top" secondItem="4PD-Ri-k9Q" secondAttribute="bottom" constant="20" id="Wpe-VE-LEZ"/>
+                <constraint firstItem="5Tl-sh-BdT" firstAttribute="top" secondItem="eff-hH-4OT" secondAttribute="bottom" constant="8" id="ZP5-om-tOf"/>
+                <constraint firstItem="suQ-Zt-xdm" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="bnK-Rp-GnZ"/>
+                <constraint firstItem="4PD-Ri-k9Q" firstAttribute="top" secondItem="5Tl-sh-BdT" secondAttribute="bottom" constant="20" id="h0k-J8-VAB"/>
+                <constraint firstItem="eff-hH-4OT" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="nU0-ev-NS2"/>
+                <constraint firstAttribute="trailing" secondItem="xW9-aO-vnP" secondAttribute="trailing" constant="20" id="r3L-88-qQD"/>
+                <constraint firstItem="seY-qG-cxj" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="sBd-LK-Xdi"/>
+                <constraint firstItem="4PD-Ri-k9Q" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="t0e-yw-2sq"/>
+                <constraint firstItem="kli-mn-hg2" firstAttribute="top" secondItem="suQ-Zt-xdm" secondAttribute="bottom" constant="8" id="xEz-JK-vZt"/>
+            </constraints>
+            <point key="canvasLocation" x="124.5" y="154.5"/>
+        </customView>
+    </objects>
+</document>
